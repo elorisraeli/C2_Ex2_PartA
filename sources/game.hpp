@@ -13,9 +13,6 @@ namespace ariel
     private:
         Player p1;
         Player p2;
-        int draws;
-        int turns;
-        vector<string> log;
 
     public:
         Game(Player p1, Player p2);
@@ -27,9 +24,6 @@ namespace ariel
         void printWiner();
         void printLog();
         void printStats();
-
-        void addToLog(const string& str);
-
     };
 }
 #endif // GAME_HPP

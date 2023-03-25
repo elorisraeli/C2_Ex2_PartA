@@ -10,44 +10,9 @@ namespace ariel
     {
 
     public:
-        enum class Series
-        {
-            HEARTS = 1,
-            DIAMONDS,
-            CLUBS,
-            SPADES
-        };
-
-        enum class Rank
-        {
-            ACE = 1,
-            TWO,
-            THREE,
-            FOUR,
-            FIVE,
-            SIX,
-            SEVEN,
-            EIGHT,
-            NINE,
-            TEN,
-            JACK,
-            QUEEN,
-            KING
-        };
-
-        Card(Series series, Rank rank);
         Card();
         ~Card();
 
-        const string& getRank();
-        const string& getSeries();
-        int getRankValue();
-
-    private:
-        Series mySeries;
-        Rank myRank;
-        string seriesString;
-        string rankString;
     };
 }
 #endif // CARD_HPP

@@ -13,8 +13,6 @@ namespace ariel
     {
     private:
         string mName;
-        vector<Card> myStack;
-        vector<Card> myTakens;
 
     public:
         Player(const string &name);
@@ -22,11 +20,6 @@ namespace ariel
 
         int stacksize();
         int cardesTaken();
-
-        void addCard(const Card& card);
-        void addCardWon(const Card& card);
-        Card playCard();
-        const string& getName();
     };
 }
 #endif
