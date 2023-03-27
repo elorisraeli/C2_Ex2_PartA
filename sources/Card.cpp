@@ -10,7 +10,6 @@ namespace ariel
     Card::Card(Series series, Rank rank) : mySeries(series), myRank(rank){}
     Card::Card(){}
 
-    Card::~Card(){}
 
     string Card::getRank()
     {

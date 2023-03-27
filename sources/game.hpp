@@ -15,9 +15,7 @@ namespace ariel
         Player player2;
 
     public:
-        Game(Player player1, Player player2);   // my own constructor
-
-        ~Game();                                // a deconstructor
+        Game(Player player1, Player player2);
 
         void playTurn();
         void printLastTurn();

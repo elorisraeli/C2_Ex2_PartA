@@ -9,8 +9,6 @@ namespace ariel
 {
     Player::Player(string name) : mName(name) {}
 
-    Player::~Player() {}
-
     int Player::stacksize()
     {
         return 0;

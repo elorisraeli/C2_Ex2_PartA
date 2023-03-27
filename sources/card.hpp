@@ -37,8 +37,6 @@ namespace ariel
         Card(Series series, Rank rank); // my own constructor
         Card();                         // empty constructor
 
-        ~Card(); // a deconstructor
-
         string getRank();
         string getSeries();
         int getRankValue();

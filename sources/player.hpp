@@ -15,9 +15,8 @@ namespace ariel
         string mName;
 
     public:
-        Player(string name);                          // my own constructor
+        Player(string name);
 
-        ~Player();                                    // a deconstructor
 
 
         int stacksize();

@@ -12,8 +12,6 @@ namespace ariel
 {
     Game::Game(Player player1, Player player2) : player1(player1), player2(player2) {}
 
-    Game::~Game() {}
-
     void Game::playTurn()
     {
     }
