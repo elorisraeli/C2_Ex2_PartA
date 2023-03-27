@@ -10,13 +10,9 @@ using namespace std;
 
 namespace ariel
 {
-    Game::Game(Player p1, Player p2) : p1(p1), p2(p2)
-    {
-    }
+    Game::Game(Player player1, Player player2) : player1(player1), player2(player2) {}
 
-    Game::~Game()
-    {
-    }
+    Game::~Game() {}
 
     void Game::playTurn()
     {
@@ -38,6 +34,23 @@ namespace ariel
     }
     void Game::printStats()
     {
+    }
+
+    void Game::addToLog(string str)
+    {
+    }
+
+    void Game::shuffleDeckAndGivePlayers()
+    {
+    }
+
+    string Game::getDrawsString()
+    {
+        return "";
+    }
+    string Game::getTurnsPlayedString()
+    {
+        return "";
     }
 
 }

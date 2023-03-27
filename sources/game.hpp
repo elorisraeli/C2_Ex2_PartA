@@ -11,12 +11,13 @@ namespace ariel
     class Game
     {
     private:
-        Player p1;
-        Player p2;
+        Player player1;
+        Player player2;
 
     public:
-        Game(Player p1, Player p2);
-        ~Game();
+        Game(Player player1, Player player2);   // my own constructor
+
+        ~Game();                                // a deconstructor
 
         void playTurn();
         void printLastTurn();
@@ -24,6 +25,12 @@ namespace ariel
         void printWiner();
         void printLog();
         void printStats();
+
+        void addToLog(string str);
+        void shuffleDeckAndGivePlayers();
+
+        string getDrawsString();
+        string getTurnsPlayedString();
     };
 }
 #endif // GAME_HPP

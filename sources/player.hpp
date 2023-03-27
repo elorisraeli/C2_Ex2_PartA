@@ -15,11 +15,16 @@ namespace ariel
         string mName;
 
     public:
-        Player(const string &name);
-        ~Player();
+        Player(string name);                          // my own constructor
+
+        ~Player();                                    // a deconstructor
+
 
         int stacksize();
         int cardesTaken();
+        Card playCard();
+        void addCardsWon(vector<Card> wonDeck);
+        string getName();
     };
 }
 #endif

@@ -7,9 +7,7 @@ using namespace std;
 
 namespace ariel
 {
-    Player::Player(const string &name) : mName(name)
-    {
-    }
+    Player::Player(string name) : mName(name) {}
 
     Player::~Player() {}
 
@@ -23,5 +21,18 @@ namespace ariel
         return 0;
     }
 
+    Card Player::playCard()
+    {
+        return Card();
+    }
+
+    void Player::addCardsWon(vector<Card> wonDeck)
+    {
+    }
+
+    string Player::getName()
+    {
+        return mName;
+    }
 
 }
